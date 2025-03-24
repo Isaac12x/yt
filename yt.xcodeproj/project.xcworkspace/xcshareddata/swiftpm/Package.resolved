@@ -1,0 +1,33 @@
+{
+  "originHash" : "bad7c1bf678e4b83315edf5a65f96a40bafc0714978379affa6a10405199af76",
+  "pins" : [
+    {
+      "identity" : "reachability.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashleymills/Reachability.swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "21d1dc412cfecbe6e34f1f4c4eb88d3f912654a6"
+      }
+    },
+    {
+      "identity" : "refreshable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/c-villain/Refreshable",
+      "state" : {
+        "revision" : "2e62fe4f4aab06ccbbe466cec0618c3e69d4c5f1",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "sqlite.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephencelis/SQLite.swift",
+      "state" : {
+        "revision" : "a95fc6df17d108bd99210db5e8a9bac90fe984b8",
+        "version" : "0.15.3"
+      }
+    }
+  ],
+  "version" : 3
+}

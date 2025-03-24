@@ -3,40 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1F248C2D911B80000498FA /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = EC1F248B2D911B80000498FA /* SQLite */; };
+		EC1F248F2D911BA3000498FA /* Refreshable in Frameworks */ = {isa = PBXBuildFile; productRef = EC1F248E2D911BA3000498FA /* Refreshable */; };
+		EC1F24922D911BB4000498FA /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = EC1F24912D911BB4000498FA /* Reachability */; };
+		EC1F24942D911BC0000498FA /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = EC1F24932D911BC0000498FA /* Reachability */; };
 		EC342C422B00F76C00E90359 /* ytApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC342C412B00F76C00E90359 /* ytApp.swift */; };
-		EC342C442B00F76C00E90359 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC342C432B00F76C00E90359 /* ContentView.swift */; };
 		EC342C462B00F76E00E90359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC342C452B00F76E00E90359 /* Assets.xcassets */; };
 		EC342C492B00F76E00E90359 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC342C482B00F76E00E90359 /* Preview Assets.xcassets */; };
-		EC342C502B00F79A00E90359 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC342C4F2B00F79A00E90359 /* WebView.swift */; };
 		EC3D21CF2B9DE39A0097340F /* JS in Resources */ = {isa = PBXBuildFile; fileRef = EC3D21CE2B9DE39A0097340F /* JS */; };
-		EC7C4AEA2B305EBE0081F3F3 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7C4AE92B305EBE0081F3F3 /* Connectivity.swift */; };
-		EC83E5E72B5FD3060029F4BA /* WebViewNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83E5E62B5FD3060029F4BA /* WebViewNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC2D96182D33CDA000C0B206 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		EC342C3E2B00F76C00E90359 /* yt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC342C412B00F76C00E90359 /* ytApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ytApp.swift; sourceTree = "<group>"; tabWidth = 4; };
-		EC342C432B00F76C00E90359 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC342C452B00F76E00E90359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC342C482B00F76E00E90359 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EC342C4F2B00F79A00E90359 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		EC3D21CA2B9DE3780097340F /* AdBlocker.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = AdBlocker.js; sourceTree = "<group>"; };
-		EC3D21CC2B9DE38B0097340F /* Functionality.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Functionality.js; sourceTree = "<group>"; };
 		EC3D21CE2B9DE39A0097340F /* JS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = JS; path = yt/JS; sourceTree = "<group>"; };
-		EC7C4AE92B305EBE0081F3F3 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
-		EC83E5E62B5FD3060029F4BA /* WebViewNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewNavigation.swift; sourceTree = "<group>"; };
 		ECA178532B035ED8002F2966 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		ECDFD8852D60063A00F5B436 /* BlockLoadVidsHomePage.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = BlockLoadVidsHomePage.js; sourceTree = "<group>"; };
+		ECDFD8862D60064600F5B436 /* CommentFunctionality 2.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "CommentFunctionality 2.js"; sourceTree = "<group>"; };
+		ECDFD8872D60064600F5B436 /* VideoFunctionality 2.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "VideoFunctionality 2.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EC1F24892D90D1D1000498FA /* Managers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Managers; sourceTree = "<group>"; };
+		ECE81C692D903BE100168C6A /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		ECE81C6B2D903C1000168C6A /* Utilitites */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Utilitites; sourceTree = "<group>"; };
+		ECE81C702D903C4B00168C6A /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EC342C3B2B00F76C00E90359 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC1F248F2D911BA3000498FA /* Refreshable in Frameworks */,
+				EC1F24942D911BC0000498FA /* Reachability in Frameworks */,
+				EC1F24922D911BB4000498FA /* Reachability in Frameworks */,
+				EC1F248C2D911B80000498FA /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +76,12 @@
 				ECA178532B035ED8002F2966 /* Info.plist */,
 				EC3D21C22B9DD3A60097340F /* JS */,
 				EC342C412B00F76C00E90359 /* ytApp.swift */,
-				EC83E5E62B5FD3060029F4BA /* WebViewNavigation.swift */,
-				EC342C432B00F76C00E90359 /* ContentView.swift */,
-				EC342C4F2B00F79A00E90359 /* WebView.swift */,
+				EC1F24892D90D1D1000498FA /* Managers */,
+				ECE81C692D903BE100168C6A /* Models */,
 				EC342C452B00F76E00E90359 /* Assets.xcassets */,
+				ECE81C702D903C4B00168C6A /* Views */,
 				EC342C472B00F76E00E90359 /* Preview Content */,
-				EC7C4AE92B305EBE0081F3F3 /* Connectivity.swift */,
+				ECE81C6B2D903C1000168C6A /* Utilitites */,
 			);
 			path = yt;
 			sourceTree = "<group>";
@@ -87,8 +97,10 @@
 		EC3D21C22B9DD3A60097340F /* JS */ = {
 			isa = PBXGroup;
 			children = (
+				EC2D96182D33CDA000C0B206 /* README.txt */,
 				EC3D21CA2B9DE3780097340F /* AdBlocker.js */,
 				EC3D21C32B9DD3B90097340F /* InDev */,
+				ECDFD8852D60063A00F5B436 /* BlockLoadVidsHomePage.js */,
 			);
 			path = JS;
 			sourceTree = "<group>";
@@ -96,7 +108,8 @@
 		EC3D21C32B9DD3B90097340F /* InDev */ = {
 			isa = PBXGroup;
 			children = (
-				EC3D21CC2B9DE38B0097340F /* Functionality.js */,
+				ECDFD8862D60064600F5B436 /* CommentFunctionality 2.js */,
+				ECDFD8872D60064600F5B436 /* VideoFunctionality 2.js */,
 			);
 			path = InDev;
 			sourceTree = "<group>";
@@ -108,6 +121,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC342C4C2B00F76E00E90359 /* Build configuration list for PBXNativeTarget "yt" */;
 			buildPhases = (
+				EC1F249B2D912787000498FA /* ShellScript */,
 				EC342C3A2B00F76C00E90359 /* Sources */,
 				EC342C3B2B00F76C00E90359 /* Frameworks */,
 				EC342C3C2B00F76C00E90359 /* Resources */,
@@ -115,6 +129,12 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EC1F24892D90D1D1000498FA /* Managers */,
+				ECE81C692D903BE100168C6A /* Models */,
+				ECE81C6B2D903C1000168C6A /* Utilitites */,
+				ECE81C702D903C4B00168C6A /* Views */,
 			);
 			name = yt;
 			productName = yt;
@@ -145,6 +165,11 @@
 				Base,
 			);
 			mainGroup = EC342C352B00F76C00E90359;
+			packageReferences = (
+				EC1F248A2D911B80000498FA /* XCRemoteSwiftPackageReference "SQLite" */,
+				EC1F248D2D911BA3000498FA /* XCRemoteSwiftPackageReference "Refreshable" */,
+				EC1F24902D911BB4000498FA /* XCRemoteSwiftPackageReference "Reachability.swift" */,
+			);
 			productRefGroup = EC342C3F2B00F76C00E90359 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -167,16 +192,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		EC1F249B2D912787000498FA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat .\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC342C3A2B00F76C00E90359 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7C4AEA2B305EBE0081F3F3 /* Connectivity.swift in Sources */,
-				EC342C502B00F79A00E90359 /* WebView.swift in Sources */,
-				EC342C442B00F76C00E90359 /* ContentView.swift in Sources */,
 				EC342C422B00F76C00E90359 /* ytApp.swift in Sources */,
-				EC83E5E72B5FD3060029F4BA /* WebViewNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,13 +348,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"yt/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EDUH3PA3FS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = yt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -326,8 +370,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammbo.yt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,13 +388,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"yt/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EDUH3PA3FS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = yt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = YT;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -358,8 +410,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mammbo.yt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,6 +445,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC1F248A2D911B80000498FA /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+		EC1F248D2D911BA3000498FA /* XCRemoteSwiftPackageReference "Refreshable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/c-villain/Refreshable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		EC1F24902D911BB4000498FA /* XCRemoteSwiftPackageReference "Reachability.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC1F248B2D911B80000498FA /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC1F248A2D911B80000498FA /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+		EC1F248E2D911BA3000498FA /* Refreshable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC1F248D2D911BA3000498FA /* XCRemoteSwiftPackageReference "Refreshable" */;
+			productName = Refreshable;
+		};
+		EC1F24912D911BB4000498FA /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC1F24902D911BB4000498FA /* XCRemoteSwiftPackageReference "Reachability.swift" */;
+			productName = Reachability;
+		};
+		EC1F24932D911BC0000498FA /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC1F24902D911BB4000498FA /* XCRemoteSwiftPackageReference "Reachability.swift" */;
+			productName = Reachability;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC342C362B00F76C00E90359 /* Project object */;
 }

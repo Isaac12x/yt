@@ -196,7 +196,7 @@ function removeJsonPaths(domains, jsonPaths)
 }
 // Observe and remove ads when new content is loaded dynamically
 const observer = new MutationObserver(() =>
-                                      {
+                                      
     removeJsonPaths(domainsToRemove, jsonPathsToRemove);
 });
 

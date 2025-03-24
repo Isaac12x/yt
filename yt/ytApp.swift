@@ -12,6 +12,7 @@ import AVFoundation
 struct ytApp: App {
     
     init() {
+        // play with the app minimised.
         let audioSession = AVAudioSession.sharedInstance()
         do {
             try audioSession.setCategory(.playback, mode: .default)

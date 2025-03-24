@@ -47,64 +47,62 @@ func loadJsCodes() -> [String] {
     }
     return javascriptCodes
 }
-              
+
 
 struct ContentView: View {
     @ObservedObject var connectivityViewModel = ConnectivityViewModel()
     @ObservedObject private var webViewNavigation = WebViewNavigation()
-
-
-    let youtubeURL = URL(string: "https://m.youtube.com")!
+    @State private var currentURL: URL? = URL(string: "https://m.youtube.com")!
+    @State private var blocks: [Block] = []
     let javascriptCodes: [String] = loadJsCodes()
-
-
+    
+    
     var body: some View {
-        NavigationView {
-            if !javascriptCodes.isEmpty {
-            WebView(navigation: webViewNavigation, url: youtubeURL, javascriptCodes: loadJsCodes())
-              .toolbar {
-                  ToolbarItemGroup(placement: .bottomBar) {
-                    Button(action: {
-                        webViewNavigation.goBack()
-                    }) {
-                        Image(systemName: "chevron.left")
-                    }.disabled(!webViewNavigation.canGoBack)
+        VStack{
+            NavigationView {
+                if !javascriptCodes.isEmpty {
+                    WebView(navigation: webViewNavigation, url: $currentURL, onNavigationFinished: handleNavigation, javascriptCodes: loadJsCodes())
                     
-                    Button(action: {
-                        webViewNavigation.goForward()
-                    }) {
-                        Image(systemName: "chevron.right")
-                    }.disabled(!webViewNavigation.canGoForward)
+                } else {
+                    WebView(navigation: webViewNavigation, url: $currentURL, onNavigationFinished: handleNavigation)
+                        .navigationBarTitle("YouTube Browser", displayMode: .inline).frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
-            }.edgesIgnoringSafeArea(.bottom)
-                
-
-            } else {
-                WebView(navigation: webViewNavigation, url: youtubeURL)
-                    .navigationBarTitle("YouTube Browser", displayMode: .inline)
-                    .toolbar {
-                        ToolbarItemGroup(placement: .bottomBar) {
-                          Button(action: {
-                              webViewNavigation.goBack()
-                          }) {
-                              Image(systemName: "chevron.left")
-                          }.disabled(!webViewNavigation.canGoBack)
-                          
-                          Button(action: {
-                              webViewNavigation.goForward()
-                          }) {
-                              Image(systemName: "chevron.right")
-                          }.disabled(!webViewNavigation.canGoForward)
-                      }
-                  }.edgesIgnoringSafeArea(.bottom)
-
+            }.alert(isPresented: $connectivityViewModel.showAlert) {
+                Alert(
+                    title: Text("No Internet Connection"),
+                    message: Text("Please check your internet connection and try again."),
+                    dismissButton: .default(Text("OK"))
+                )
             }
-        }.alert(isPresented: $connectivityViewModel.showAlert) {
-            Alert(
-                title: Text("No Internet Connection"),
-                message: Text("Please check your internet connection and try again."),
-                dismissButton: .default(Text("OK"))
-            )
+            List(blocks) { block in
+                VStack(alignment: .leading) {
+                    Text("URL: \(block.url)")
+                        .font(.headline)
+                    Text("Timestamp: \(block.timestamp)")
+                        .font(.subheadline)
+                    Text("Hash: \(block.hash)")
+                        .font(.footnote)
+                }
+                .padding()
+            }}
+        .onAppear {
+            // Load the active session when the view appears
+            BlockchainManager.shared.loadActiveSession()
+            blocks = BlockchainManager.shared.fetchBlocks()
+            startSessionExpirationTimer()
+        }
+    }
+    
+    private func handleNavigation(url: URL) {
+        // Called when the WebView finishes loading a page
+        BlockchainManager.shared.addBlock(url: url)
+        blocks = BlockchainManager.shared.fetchBlocks()
+    }
+    
+    private func startSessionExpirationTimer() {
+        Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { _ in
+            BlockchainManager.shared.checkSessionExpiration()
+            blocks = BlockchainManager.shared.fetchBlocks()
         }
     }
 }
