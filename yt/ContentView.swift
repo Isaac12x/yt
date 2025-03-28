@@ -62,42 +62,9 @@ struct ContentView: View {
         NavigationView {
             if !javascriptCodes.isEmpty {
             WebView(navigation: webViewNavigation, url: youtubeURL, javascriptCodes: loadJsCodes())
-              .toolbar {
-                  ToolbarItemGroup(placement: .bottomBar) {
-                    Button(action: {
-                        webViewNavigation.goBack()
-                    }) {
-                        Image(systemName: "chevron.left")
-                    }.disabled(!webViewNavigation.canGoBack)
-                    
-                    Button(action: {
-                        webViewNavigation.goForward()
-                    }) {
-                        Image(systemName: "chevron.right")
-                    }.disabled(!webViewNavigation.canGoForward)
-                }
-            }.edgesIgnoringSafeArea(.bottom)
-                
-
             } else {
                 WebView(navigation: webViewNavigation, url: youtubeURL)
                     .navigationBarTitle("YouTube Browser", displayMode: .inline)
-                    .toolbar {
-                        ToolbarItemGroup(placement: .bottomBar) {
-                          Button(action: {
-                              webViewNavigation.goBack()
-                          }) {
-                              Image(systemName: "chevron.left")
-                          }.disabled(!webViewNavigation.canGoBack)
-                          
-                          Button(action: {
-                              webViewNavigation.goForward()
-                          }) {
-                              Image(systemName: "chevron.right")
-                          }.disabled(!webViewNavigation.canGoForward)
-                      }
-                  }.edgesIgnoringSafeArea(.bottom)
-
             }
         }.alert(isPresented: $connectivityViewModel.showAlert) {
             Alert(
